@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container-img{
+    /* background: transparent url('img/Coffee.png') 0% 0% no-repeat padding-box; */
+    border: 1px solid #707070;
+    opacity: 1;
+    width: 65vw;
+    height: 100vh;
+}
+
+img{
+    width: 65vw;
+    height: 100vh;
+}
+
+
+#container-content {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    gap: 1em;
+    margin: auto;
+    width: 23vw;
+}
+
+#container-content>h3 {
+    font: normal normal 900 3em/2em Heebo;
+    color: #020253;
+}
+
+#container-content>p {
+    font: normal normal normal 2em/1.2em Heebo;
+    color: #020253;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    font: normal normal bold 1em/1.6em Heebo;
+}
+
+.form-control>input {
+    width: 36em;
+    height: 5em;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #020253;
+}
+
+.form-control>input[type=submit] {
+    width: 9em;
+    height: 3em;
+    background: #020253 0% 0% no-repeat padding-box;
+    color: azure;
+    font: normal normal bold 21px/30px Heebo;
+    letter-spacing: .3em;
+    padding: auto;
+}
+
+.form-control>input:hover {
+    opacity: 0.7;
+
+}
+.form-control>input[type=submit]:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color:#020253;
+    opacity: 0.8;
+}
+
+
+
+
+@media (max-width: 800px){
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    #container-img{
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    img{
+        width: 100vw;
+        height: 40vh;
+    }
+    #container-content {
+        width: 85vw;
+        padding-left: 1em;
+        margin-top: 5em;
+    }
+    
+    #container-content>h3 {
+        font: normal normal 900 3em/2em Heebo;
+        text-align: start;
+    }
+    
+    #container-content>p {
+        font: normal normal normal 1.5em/1.2em Heebo;
+        margin-bottom: 1em;
+    }
+    .form-control {
+        margin-bottom: 2em;
+        font: normal normal bold 1em/1.6em Heebo;
+    }
+    
+    .form-control>input {
+        width: 80vw;
+        height: 5vh;
+    }
+    
+    .form-control>input[type=submit] {
+        width: 80vw;
+        height: 4vh;
+        font: normal normal bold 14px/30px Heebo;
+    }
+}

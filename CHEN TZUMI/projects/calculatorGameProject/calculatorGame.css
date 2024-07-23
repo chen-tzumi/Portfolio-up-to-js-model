@@ -1,0 +1,279 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    margin: 0;
+    height: 100vh; 
+    background-image: linear-gradient(80deg, rgb(69, 70, 70), rgb(21, 57, 58));
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;  
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    background-color: #ffffff1a;
+    border-radius: 1.5em;
+
+}
+#head{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-bottom: 1.5em; */
+}
+
+#parametrs-container{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+justify-items: center;  
+align-items: center;
+width: 100em;
+height: 9em;
+background-color: #ffffff47;
+border-radius: 1.5em;
+}
+
+#parametrs-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;  
+    align-items: center;
+    width: 100em;
+    height: 8em;
+    }
+
+
+#form-control{
+    font-size: 1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 2em;
+    color: rgb(255, 255, 255);
+}
+#temporaryMessageDiv{
+
+    justify-content: center;
+justify-items: center;  
+align-items: center;
+margin-top: -2em;
+margin-bottom: 1em;
+text-align: center;
+border-radius: 1.2em;
+font-family: Arial, Helvetica, sans-serif; 
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 1em;
+height: 3em;
+width: 25em;
+}
+
+
+
+
+#select-range{
+    margin-left: 1em;
+    width: 12em;
+    height: 3em;
+    font-size: 0.6em;
+    font-family:Arial, Helvetica, sans-serif;
+
+    border-radius: 1.5em;
+border-color: rgb(255, 255, 255);
+}
+
+#select-operator{
+    margin-left: 1em;
+    width: 12em;
+    height: 3em;
+    font-size: 0.6em;
+    font-family:Arial, Helvetica, sans-serif;
+
+    border-radius: 1.5em;
+    border-color: rgb(255, 255, 255);
+}
+
+#submitParameters{
+    width: 16em;
+    height: 3em;
+    font-size: 0.6em;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 1.5em;
+    border-color:#446d70;
+    border-style: none;
+    background-color: #446d70;
+    margin-left: 2em;
+    color: rgb(255, 255, 255);
+}
+
+#submitParameters:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #5c7e80;
+    border: 1px solid #5c7e80;
+    opacity: 1;
+}
+
+
+
+#answer-container{
+    display: flex;
+flex-direction: column;
+margin-top: 1em;
+justify-content: center;
+justify-items: center;  
+align-items: center;
+    width: 100em;
+    height: 35em;
+    background-color: #ffffff47;
+    border-radius: 1.5em;
+ }
+
+ #exercise{
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.2em;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3em;
+
+}
+
+ #answer-form{
+margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;  
+    align-items: center;
+    width: 100em;
+    height: 4em;
+    }
+
+    #answer{
+        margin-left: 1em;
+    width: 12em;
+    height: 3em;
+    font-size: 0.6em;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 1.5em;
+border-color: rgb(255, 255, 255);    
+    }
+
+
+    #submitAnswer{
+        width: 16em;
+        height: 3em;
+        font-size: 0.6em;
+        font-family:Arial, Helvetica, sans-serif;
+        border-radius: 1.5em;
+        border-color:#446d70;
+        border-style: none;
+        background-color: #446d70;
+        margin-left: 1em;
+        color: rgb(255, 255, 255);
+    }
+    
+
+    #submitAnswer:hover {
+        transition: 0.5s;
+        cursor: pointer;
+        transform: scale(1.05);
+        background-color: #5c7e80;
+        border: 1px solid #5c7e80;
+        opacity: 1;
+    }
+
+    #table-container{
+        height: 10em; 
+        overflow-y: auto;
+        border: 2px solid #ccc;
+        border-radius: 1.5em;
+        /* width: 45em; */
+
+
+    }
+    #table {
+        width: 55em;
+        border-collapse: collapse;
+        border-radius: 1.5em;
+        border: 2px solid #ccc;
+        background-color: #ffffff28;
+
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+        border-left: 2px solid #ddd;
+        border-radius: 1.5em;
+        color: rgb(255, 255, 255);
+    }
+    #starOver{
+        width: 16em;
+        height: 3em;
+        margin-top: 2em;
+        font-size: 1.1em;
+        font-family:Arial, Helvetica, sans-serif;
+        border-radius: 1.5em;
+        border-color: #3d3d3d;
+        border-style: none;
+        background-color: #3d3d3d;
+        color: rgb(255, 255, 255);
+    }
+
+
+    
+
+    #starOver:hover {
+        transition: 0.5s;
+        cursor: pointer;
+        transform: scale(1.05);
+        background-color: #3d3d3d;
+        border: 1px solid #3d3d3d;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+    @media (max-width: 768px) {
+        #parameters-form, #answer-form {
+          flex-direction: column;
+        }
+       
+        #main-container {
+          width: 95vw;
+          height: auto;
+          padding: 10px;
+        }
+       
+        #parameters-container, #answer-container {
+          width: 100%;
+          padding: 10px;
+        }
+       
+        #exercise {
+          font-size: 1.5em;
+        }
+       
+        #temporaryMessageDiv {
+          font-size: 0.9em;
+        }
+       
+        #select-range, #select-operator, #submitParameters, #answer, #submitAnswer, #starOver {
+          width: 100%;
+          font-size: 0.9em;
+          padding: 10px;
+        }
+       }

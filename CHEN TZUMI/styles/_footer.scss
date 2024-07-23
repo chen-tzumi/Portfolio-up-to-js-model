@@ -1,0 +1,31 @@
+#footer{
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    opacity: 1 !important;
+    background-color: rgb(255, 255, 255,0);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    height: 4vh;
+    opacity: 1 !important;
+    color: rgb(255, 255, 255);
+padding-bottom: 1em;
+}
+
+#container-footer>p {
+color: rgb(255, 255, 255);
+font-size: 1em;
+}
+
+
+#container-footer img{
+width: 1px;
+height: 1px;
+
+}

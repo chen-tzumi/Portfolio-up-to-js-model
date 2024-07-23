@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+#gallery {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+//     margin-top: 4em;
+// padding-top: 5.5em;
+}
+
+
+#container-gallery {
+    z-index:  999;
+    margin:0 auto;
+    padding: 0 auto;
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+
+    width: 96em;
+    margin-top: 2.5em;
+}
+
+.waviy {
+    z-index:  999;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size:2.5em ;
+padding-top: 2em;
+
+ }
+  .waviy span {
+    font-family: 'pooping';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.2s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    height: 20em;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    justify-items: center;
+margin-top: 2em;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+opacity: 1;
+}
+.card h3{
+font-family: 'popping';
+font-size: 1.5em;
+color: rgb(255, 255, 255);
+border-bottom: 1px solid #fff;
+padding: 0.2em;
+border-top: 1px solid #fff;
+width: 6em;
+background-color: rgb(255, 255, 255, 0.3);
+margin: 0 auto ;
+margin-top: 1.3em;
+}
+
+.card p{
+    font-family: 'popping';
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    margin-top: 1em;
+
+}
+
+
+
+#bg-image1 {
+    background-image: url('../projects/project1/imagepresentation/imagepresentation1.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    z-index: 999;
+    // object-fit:fill;
+}
+
+#bg-image2 {
+    background-image: url('../projects/project2/imagepresentation/imagepresentation.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#bg-image3 {
+    background-image: url('../projects/project3/imagepresentation/imagepresentation3.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#bg-image4 {
+    background-image: url('../projects/project4/imagepresentation/imagepresentation4.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#bg-image5 {
+    background-image: url('../projects/project5/imagepresentation/imagepresentation5.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#bg-image6 {
+    background-image: url('../projects/project6/imagepresentation/imagepresentation6.jpg');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+    .link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+    #bg-image-calculatorGame{
+        background-image: url('../projects/calculatorGameProject/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    
+    #bg-image-memoryGame{
+        background-image: url('../projects/memoryGameProject/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #bg-image-shopingList{
+        background-image: url('../projects/shoppingListProject/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    
+    #bg-image-sreenBuilder{
+        background-image: url('../projects/sreenBuilderProject/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #bg-image-ticTacToe{
+        background-image: url('../projects/ticTacToeProject/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #bg-image-userManagement{
+        background-image: url('../projects/userManagement/imagepresentation/img-card.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+      @media (max-width: 800px){
+        #gallery {
+            height: 300vh;
+            width: 100vw;
+        }
+        #container-gallery {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            justify-items: center;
+            width:90vw;
+            margin-top: 4em;
+        }
+
+        .card {
+            width: 60vw;
+            height: 40vh;
+        }
+
+        
+        #bg-image1 {
+            background-size: contain;
+        }
+        #bg-image2 {
+            background-size: contain;
+        }
+        #bg-image3 {
+            background-size: contain;
+        }
+        #bg-image4 {
+            background-size: contain;
+        }
+        #bg-image5 {
+            background-size: contain;
+        }
+        #bg-image6 {
+    background-size: contain;
+}
+      }
+
+
+
+

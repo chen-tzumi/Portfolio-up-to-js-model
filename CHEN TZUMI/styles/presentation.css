@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#top {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+}
+
+
+#container-content{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vh;
+}
+
+#container-content>h1{
+    text-align: center;
+    font: normal normal 900 55px/90px Heebo;
+    letter-spacing: 4px;
+    color: #ffffff;
+    opacity: 1;
+    padding-bottom: 0em;
+}
+
+#container-content>p{
+    text-align: center;
+    font: normal normal 100 16px/16px Heebo;
+    color: #b4c7c0;
+    letter-spacing: 2px;
+    line-height: 2em;
+
+}
+
+
+#container-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+height: 7vh;
+margin-top: 3vh;
+}
+
+
+
+
+.btnbright{
+    background-color: #f1f0f1;
+    color: #111414;
+    text-align: center;
+    font: normal normal 600 16px/20px Heebo;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all .2s;;
+    margin: 2em;
+    border-radius: 4px;
+    width: 9em;
+    height: 3em;
+    padding: .9em;
+
+}
+.btndark{
+    background-color: rgba(243, 243, 243, 0.4);
+    color: #ffffff;
+    text-align: center;
+    font: normal normal 600 16px/20px Heebo;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all .2s;;
+    margin: 2em;
+    border-radius: 4px;
+    width: 11em;
+    height: 3em;
+    padding: 1.5em 1.5em;
+    padding: .9em;
+
+}
+#container-btns .btnbright a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+#container-btns .btndark a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btndark:hover {
+    opacity: .8;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(63, 83, 82, 0.3);
+    
+
+}
+
+
+
+.btnbright:hover{
+    opacity: .8;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #2ad5c1;
+}
+
+#middle{
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 2em;
+}
+
+#container-middle{
+    width: 65vw;
+    height: 12vh;
+    background-color: rgb(255, 255, 255, .1);
+    align-items: center;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 1.6em;
+    text-align: center;
+    justify-items: center;
+
+}
+
+
+
+#container-middle>img{
+    width: 4em;
+    height: 4em;
+    border-radius: 24px;
+    margin-inline: 2em;
+}
+
+#bottom{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5em;
+}
+#container-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    width: 65vw;
+    height: 65vh;
+
+}
+
+
+
+#container-bottom>img{
+    width: 65vw;
+    height: 65vh;
+    transition: all .2s;
+}
+#container-bottom img:hover{
+opacity: 0.7;
+
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+@media (max-width: 800px){
+    #top {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+    }
+    
+    
+    #container-content{
+        height: 50vh;
+        width: 90vw;
+        padding-top: 5vh;
+    }
+    #container-content>h1{
+        font: normal normal 900 25px/90px Heebo;
+    }
+    #container-content>p{
+        font: normal normal 100 16px/16px Heebo;
+        line-height: 3vh;
+    
+    }
+    #container-btns {
+        display: flex;
+        flex-direction: column;
+    height: 15vh;
+    margin-top: 1vh;
+
+    }
+    
+
+    .btnbright{
+        margin: .5em;
+        width: 45vw;
+        font: normal normal 600 10px/20px Heebo;
+
+    }
+    .btndark{
+        margin: .5em;
+        width: 40vw;
+        font: normal normal 600 10px/20px Heebo;
+
+    }
+
+    #middle{
+        height: 10vh;
+        margin-top: 0em;
+    }
+    
+    #container-middle{
+        width: 90vw;
+        height: 10vh;
+        padding-bottom: 1vh;
+    }
+    
+    
+    
+    #container-middle>img{
+        width: 3em;
+        height: 3em;
+        margin-inline: 1em;
+    }
+
+    #bottom{
+        height: 35vh;
+        padding-top: 2.5vh;
+    }
+    #container-bottom{
+        width: 90vw;
+        height: 35vh;
+    }
+    
+    
+    
+    #container-bottom>img{
+        width: 90vw;
+        height: 30vh;
+    }
+}

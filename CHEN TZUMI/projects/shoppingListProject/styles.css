@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(80deg, rgb(69, 70, 70), rgb(21, 57, 58));
+ }
+ 
+ .container {
+  width: 90vw;
+  max-width: 600px;
+  height: 80vh;
+  background-color: #ffffff4e;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5em;
+ }
+ 
+ h1 {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ 
+ .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2em;
+ }
+ 
+ .form-section input, .form-section button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 1em;
+  border: none;
+ }
+ 
+ .form-section button {
+  background-color: #466468;
+  color: white;
+  cursor: pointer;
+ }
+ 
+ .table-section {
+  margin: 1em 0;
+  border-radius: 1.5em;
+  background-color: #ffffff21;
+  overflow-x: auto;
+ }
+ 
+ table {
+  width: 100%;
+  border-collapse: collapse;
+ }
+ 
+ th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9em;
+ }
+ 
+ button.action-button {
+  padding: 3px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+ }
+ 
+ button.edit-button {
+  background-color: #3d4a49;
+  color: white;
+ }
+ 
+ button.delete-button {
+  background-color: #35796e;
+  color: white;
+ }
+ 
+ button.add-button {
+  background-color: #6e9f93;
+  color: white;
+ }
+ 
+ button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
+  opacity: 1;
+ }
+ 
+ @media (min-width: 768px) {
+  .container {
+    width: 60vw;
+  }
+ 
+  .form-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ 
+  .form-section input, .form-section button {
+    width: auto;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+ 
+  .form-section button {
+    width: 5em;
+  }
+ }
+ 

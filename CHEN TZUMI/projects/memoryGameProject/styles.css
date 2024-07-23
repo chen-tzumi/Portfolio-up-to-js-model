@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(80deg, rgb(69, 70, 70), rgb(21, 57, 58));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main-container {
+    width: 80%;
+    text-align: center;
+    background-color: #ffffff49;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1em 0;
+    color: rgb(255, 255, 255);
+}
+
+#levels-container {
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+#levels-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 1em 10px;
+    border-radius: 1.5em;
+    border-style: none;
+    border-color: #576b6c;
+    background-color: #576b6c;
+    color: rgb(255, 255, 255);
+}
+
+#levels-container button:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #515657;
+    border: 1px solid #515657;
+    opacity: 1;
+}
+
+.board {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: .2em solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: #4d58595d;
+}
+.card:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.09);
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.flipped img {
+    display: block;
+}
+
+.matched {
+    border: 4px solid white;
+}
+
+#buttonsContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#buttonsContainer button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 1em 10px;
+    border-radius: 1.5em;
+    border-style: none;
+    border-color: #576b6c;
+    background-color: #576b6c;
+    color: #ffffff;
+}
+
+#buttonsContainer button:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #515657;
+    border: 1px solid #515657;
+    opacity: 1;
+}
+
+#begginersBoardCard {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#advancedBoardCard {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Media Queries for responsiveness */
+
+/* Breakpoint at 1200px */
+@media (max-width: 1200px) {
+    #main-container {
+        width: 90%;
+    }
+
+    .card {
+        width: 90px;
+        height: 90px;
+        margin: 8px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #levels-container button,
+    #buttonsContainer button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Breakpoint at 768px */
+@media (max-width: 768px) {
+    #main-container {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+        margin: 6px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #levels-container button,
+    #buttonsContainer button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    #begginersBoardCard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #advancedBoardCard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Breakpoint at 480px */
+@media (max-width: 480px) {
+    #main-container {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .card {
+        width: 60px;
+        height: 60px;
+        margin: 4px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    #levels-container button,
+    #buttonsContainer button {
+        padding: 4px 8px;
+        font-size: 0.7em;
+    }
+
+    #begginersBoardCard,
+    #advancedBoardCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Breakpoint at 320px */
+@media (max-width: 320px) {
+    #main-container {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .card {
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #levels-container button,
+    #buttonsContainer button {
+        padding: 2px 6px;
+        font-size: 0.6em;
+    }
+
+    #begginersBoardCard,
+    #advancedBoardCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

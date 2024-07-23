@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+width: 100;
+height:auto;
+background-color: #111414;
+align-items: center;
+text-align: center;
+}
+
+
+
+#container-img-sells{
+margin:0 auto;
+margin-top: 10em;
+margin-bottom: 10em;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(6,1fr);
+width: 83em;
+height: 125em;
+gap: 1em;
+
+}
+#container-img-sells>img{
+width: 20em;
+height: 20em;
+}
+
+
+#container-top-sell{
+    width: 41em;
+    height: 41em;
+    grid-row: 1/3;
+    grid-column: 3/5;
+    background-color: #485656;
+}
+
+#container-content-topsell{
+    margin-top: 13em;
+}
+#container-content-topsell>h1{
+    color:  #e1f0f0 ;
+    font: normal normal 600 40px/80px Heebo;
+    letter-spacing: 2px;
+}
+#container-content-topsell>p{
+    color:  #e1f0f0 ;
+    font: normal normal 100 15px/35px Heebo;
+    letter-spacing: 2px;
+}
+
+
+
+#container-bottom-sell{
+    width: 41em;
+    height: 62em;
+    grid-row: 4/7;
+    grid-column: 1/3;
+    background-color: #486a6a;
+    align-items: center;
+
+}
+
+
+#container-content-bottomsell{
+    display: flex;
+    flex-direction: column; 
+margin-top: 6em;
+}
+
+#container-content-bottomsell>h1{
+    color:  #e1f0f0 ;
+font: normal normal 600 35px/75px Heebo;
+letter-spacing: 2px;
+}
+
+#container-content-bottomsell>p{
+    color:  #e1f0f0 ;
+font: normal normal 100 16px/18px Heebo;
+letter-spacing: 2px;
+}
+
+
+
+
+#conteiner-form{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    margin-top: 5em;
+text-align: left;
+}
+
+.form-control{
+    color:  #b9cbcb ;
+    font: normal normal 100 15px/25px Heebo;
+    letter-spacing: 2px;
+}
+.form-control>input{
+    width: 24vw;
+    height: 5vh;
+    border: 1px solid   #82a3a3;
+    border-bottom: 4px solid #b0dbdb;
+    border-radius: 4px;
+    background-color: #82a3a3;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.form-control-experience{
+    color:  #b9cbcb ;
+    font: normal normal 100 15px/25px Heebo;
+    letter-spacing: 2px;
+}
+
+.form-control-experience>input{
+    width: 24vw;
+    height: 15vh;
+    border: 1px solid #82a3a3;
+    border-bottom: 4px solid  #b9cbcb;
+    border-radius: 4px;
+    background-color: #82a3a3;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.form-control>input[type=submit]{
+    width: 24vw;
+    height: 5vh;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #344141;
+    font: normal normal 100 15px/15px Heebo;
+    letter-spacing: 2px;
+    background-color: #fff;
+    padding: auto;
+}
+
+
+.form-control>input:hover{
+    opacity: 0.6;
+}
+.form-control-experience>input:hover{
+    opacity: 0.6;
+
+}
+
+input[type=submit]:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color:#2ad5c1;
+    border: 1px solid#2ad5c1;
+
+}
+
+
+@media (max-width: 800px){
+    body{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        }
+#container-img-sells{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(12,1fr);
+    width: 91vw;
+    height: 215vh;
+    gap: 1vh;
+margin-top: 10vh;
+    }
+
+    #container-img-sells>img{
+    width: 45vw;
+    height: 17vh;
+    }
+    
+    
+    #container-top-sell{
+        width: 91vw;
+        height: 35vh;
+        grid-row: 1/3;
+        grid-column: 1/3;
+    }
+    
+    #container-content-topsell{
+        margin-top: 0em;
+        padding: 2vh;
+        padding-top: 5vh;
+    }
+    #container-content-topsell>h1{
+        font: normal normal 600 3vh/5vh Heebo;
+    }
+    #container-content-topsell>p{
+        font: normal normal 100 2vh/3vh Heebo;
+    }
+    
+    
+    
+    #container-bottom-sell{
+        width: 91vw;
+        height: 53vh;
+        grid-row: 7/10;
+        grid-column: 1/3;    
+    }
+    
+    
+    #container-content-bottomsell{
+        margin-top: 0em;
+        padding: 2vh;
+        padding-top: 3vh;
+    }
+    
+    #container-content-bottomsell>h1{
+        font: normal normal 600 3vh/5vh Heebo;
+
+    }
+    
+    #container-content-bottomsell>p{
+        font: normal normal 100 2vh/3vh Heebo;
+    }
+    
+
+    #conteiner-form{
+        margin-top: 2vh;
+    }
+    
+    .form-control{
+        font: normal normal 100 1.5vh/2vh Heebo;
+    }
+    .form-control>input{
+        width: 85vw;
+        height: 4vh;
+        margin-bottom: 2vh;
+    }
+    
+    .form-control-experience{
+        font: normal normal 100 1.5vh/2vh Heebo;
+
+    }
+    
+    .form-control-experience>input{
+        width: 85vw;
+        height: 9vh;
+        margin-bottom: 3.5vh;
+    }
+
+    .form-control>input[type=submit]{
+        width: 85vw;
+        height: 4vh;
+        font: normal normal 100 2vh/3vh Heebo;
+    }
+}

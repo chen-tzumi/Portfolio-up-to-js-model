@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatorGame.css">
+    <script src="calculatorGame.js" async defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="main-container">
+
+        <div id="head">
+            <h1>Arithmetic practice</h1>
+        </div>
+
+        <div id="temporaryMessageDiv"></div>
+
+        <div id="parametrs-container">
+
+    <form id="parametrs-form">
+        <div id="form-control">
+            <label for="select-range">Select a range </label>
+            <select id="select-range">
+                <option value="1-10">1-10</option>
+                <option value="1-100">1-100</option>
+                <option value="1-1000">1-1000</option>
+            </select>
+        </div>
+
+        <div id="form-control">
+            <label for="select-operator">Select an operator </label>
+            <select id="select-operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">:</option>
+            </select>
+        </div>
+
+            <div id="form-control">
+                <input type="submit" id="submitParameters" value="submit">
+            </div>
+
+        </form>
+
+        </div>
+
+
+
+
+<div id="answer-container">
+    
+    <div id="exercise"></div>
+
+        <form id="answer-form">
+
+        <div id="form-control">
+        <label for="answer" id="exrcise">answer</label>
+        <input type="text" id="answer" required>
+        </div>
+
+        <div id="form-control">
+            <input type="submit" id="submitAnswer" value="check"  >
+        </div>
+
+    </form>
+ 
+
+
+
+
+    <div id="table-container">
+        <table id="table">
+            <tr>
+                <th>current exercise</th>
+                <th>correct answer</th>
+                <th>user answer</th>
+                <th>user points</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="points">
+
+    </div>
+    <input id="starOver" type="submit" value="start over" >
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
